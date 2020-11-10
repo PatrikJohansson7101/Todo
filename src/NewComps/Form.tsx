@@ -6,7 +6,11 @@ export default function Form() {
   const [value, setValue] = useState("");
 
   const defaultArray: ITodoArray[] = [];
-  const [todoList, setTodoList] = useState(defaultArray);
+    const [todoList, setTodoList] = useState(defaultArray);
+    
+    function addTodo(todoItem: any) {
+        setTodoList([...todoList, todoItem]);
+      }
 
   function addTodo() {
     console.log("AddTodoFunktionen:");

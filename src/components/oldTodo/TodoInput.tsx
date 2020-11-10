@@ -4,6 +4,7 @@ interface ITodoArray {
   todo: string;
 }
 
+interface ITodo{}
 export default function TodoInput() {
   const defaultValue = { todo: "" };
   const [todoItem, setTodo] = useState(defaultValue);
